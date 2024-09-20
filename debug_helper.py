@@ -108,7 +108,7 @@ def disassemble_code(file, co, recursively):
         for sub_co in co.co_consts:
             if type(sub_co) is type(co):
                 print()
-                disassemble_code(sub_co, file, recursively)
+                disassemble_code(file, sub_co, recursively)
 
 
 if __name__ == '__main__':

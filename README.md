@@ -92,7 +92,7 @@ Otherwise, build CPython from source
 - run cmake
 
   ```sh
-  cmake -B ./comPyler-build -S ./comPyler -DCMAKE_BUILD_TYPE=Release -DDIST=ON \
+  cmake -B ./comPyler-build -S . -DCMAKE_BUILD_TYPE=Release -DDIST=ON \
   	-DLLVM_ROOT=./llvm-install \
   	-DCPYTHON_EXE=./CPython-install/bin/python3.10 \
   	-DCMAKE_C_COMPILER=$(pwd)/llvm-install/bin/clang -DCMAKE_CXX_COMPILER=$(pwd)/llvm-install/bin/clang++
